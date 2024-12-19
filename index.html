@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+    <script
+        src="https://onboard.orchestrator.idnow.io/ac0133e1dea37103b06c0f966b1e72c15fb3bef6/assets/embed.js"
+        iframe-id="zenoo-embed"
+    >
+                navigator.mediaDevices.getUserMedia({audio: true, video: true})
+                    .then(function(stream) {
+                    console.log('Get User Media - Got stream');
+                    })
+                    .catch(function(err) {
+                    console.log('Get User Media - failed with error');
+                    });
+    </script>
+
+    <iframe id="zenoo-embed" style="width: 100%; height: 100%; overflow: auto;" allow="camera; microphone"></iframe>
+
+
+</body>
+</html>
